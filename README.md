@@ -1,10 +1,13 @@
-<h1 align=center>Version Badge</h1>
-
+<a href="https://version-badge.glitch.me/">
+<h1 align=center>Version Badge
+<img src="https://version-badge.glitch.me/alestor123/VERSION-BADGE/text">
+</h1>
+</a>
 <p align=center>
 <img src="https://img.shields.io/github/license/alestor123/VERSION-BADGE" alt=views >
 <a href="https://github.com/alestor123/VERSION-BADGE/issues">
 <img src="https://img.shields.io/github/issues-raw/alestor123/VERSION-BADGE"></a>
-<a href="https://www.npmjs.com/package/version-badge"><img src="https://img.shields.io/npm/v/version-badge"></a>
+<a href="https://www.npmjs.com/package/version-badge"><img src="https://version-badge.glitch.me/alestor123/VERSION-BADGE/green"></a>
 </p>
 
 # 
@@ -48,4 +51,3 @@ PORT=<Port>
 ```
 PORT=3000
 ```
-## Deployment Stats: In Progress 
