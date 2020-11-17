@@ -19,6 +19,8 @@ app.get('/:user/:repo', (req, res,next) => {
     return next(new Error('user param not specified'))
   if (typeof req.params.repo !== 'string' || req.params.repo === '')
     return next(new Error('repo param not specified'))
+var Giturl = 'https://raw.github.com/' + req.params.user + '/' + req.params.repo + '/master/package.json'
+
 })
 
 app.listen(port, () => console.log(`server running at ${port}`))
