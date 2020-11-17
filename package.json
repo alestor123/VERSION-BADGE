@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "This is a simple code for npm version badge",
   "main": "App.js",
+  "bin": {
+    "version-badge": "App.js"
+  },
   "scripts": {
     "start": "node App.js",
     "dev": "nodemon App.js",
