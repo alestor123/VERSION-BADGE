@@ -10,11 +10,9 @@ port = process.env.PORT || argv || 3000;
 app.get('/', (req, res) => {
     res.json({'info':'This is the version badge'})
 })
-
 app.get('/github', (req, res) => {
     res.redirect(pck.homepage)
 })
-
 app.get('/:user/:repo/:color/', (req, res,next) => {
     if (typeof req.params.user !== 'string' || req.params.user === '')
     return next(new Error('user param not specified'))
