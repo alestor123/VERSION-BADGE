@@ -14,4 +14,11 @@ app.get('/github', (req, res) => {
     res.redirect(pck.homepage)
 })
 
+app.get('/:user/:repo', (req, res,next) => {
+    if (typeof req.params.user !== 'string' || req.params.user === '')
+    return next(new Error('user param not specified'))
+  if (typeof req.params.repo !== 'string' || req.params.repo === '')
+    return next(new Error('repo param not specified'))
+})
+
 app.listen(port, () => console.log(`server running at ${port}`))
