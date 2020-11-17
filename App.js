@@ -6,3 +6,4 @@ argv = process.argv[2],
 port = process.env.PORT || argv || 3000;
 
 
+app.listen(port, () => console.log(`server running at ${port}`))
