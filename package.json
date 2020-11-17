@@ -4,8 +4,8 @@
   "description": "This is a simple code for npm version badge",
   "main": "App.js",
   "scripts": {
-    "start":"node App.js",
-    "dev":"nodemon App.js",
+    "start": "node App.js",
+    "dev": "nodemon App.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/alestor123/VERSION-BADGE/issues"
   },
-  "homepage": "https://github.com/alestor123/VERSION-BADGE#readme"
+  "homepage": "https://github.com/alestor123/VERSION-BADGE#readme",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "express": "^4.17.1"
+  }
 }
