@@ -6,7 +6,18 @@ axios = require('axios')
 argv = process.argv[2],
 pck = require('./package.json'),  
 port = process.env.PORT || argv || 3000;
-
+if(argv== '-v' ||argv == '--version'){
+    console.log( `${pck.version}`)
+  process.exit(1);
+}
+else if (argv =='-h'|| argv == '--help') { // checking undifined args
+    console.log(`
+    Usage: version-badge <Port> 
+`);
+}
+else{
+    app.listen(port, () => console.log(`server running at ${port}`))
+}
 app.get('/', (req, res) => {
     res.json({'info':'This is the version badge'})
 })
@@ -45,5 +56,3 @@ res.send(response.data)
     return next(err)  
 })
 })
-
-app.listen(port, () => console.log(`server running at ${port}`))
